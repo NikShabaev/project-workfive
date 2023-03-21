@@ -1,0 +1,86 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a, p, li, h1, h2, h3, h4, option, select{
+  color: #7d7d7d;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+.btn{
+  background-color: #55C97B;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+  color: #ffffff;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+.menu{
+  padding: 0;
+  max-width: 255px;
+}
+
+.pen::before{
+  content: '\270E ';
+  margin-right: 14px;
+}
+.btn__green:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(106, 196, 139, 0.76);
+}
+.btn__grey{
+  background: #B1B1B1;
+}
+.btn__grey:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(134, 134, 134);
+}
+.quite::before{
+  content: '\2716 ';
+  margin-right: 14px;
+}
+.form-select{
+  font-size: 12px;
+}
+.modal-body{
+  padding: 0;
+}
+/*.modal-rows{
+  display: flex;
+  flex-wrap: wrap;
+}*/
+.modal-content{
+  padding: 8px 38px 35px 38px;
+  max-width: 617px;
+  height: auto;
+  margin-top: 144px;
+  margin-left: 35px;
+}
+.modal-footer{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+.modal-footer, .modal-header{
+  border: 0;
+}
+.btn__modal{
+  width: 151px;
+  height: 36px;
+}
+.modal-backdrop.show {
+  opacity: 0;
+}

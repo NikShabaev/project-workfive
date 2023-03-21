@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work 5</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="row header">
+      <div class="header__left logo col-4">
+        <img class="header__logo" src="images/dest/logo.png" alt="#">
+        <nav class="header__menu">
+          <ul class="nav">
+            <li class="nav__item">
+              <img class="nav__icon" src="images/dest/web-page-home.png" alt="#">
+              <a class="nav__link" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon shopping" src="images/dest/shopping-cart.png" alt="#">
+              <a class="nav__link" href="#">Мои магазины</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon megaphone" src="images/dest/megaphone.png" alt="#">
+              <a class="nav__link" href="#">Промоматериалы</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon chart" src="images/dest/pie-chart.png" alt="#">
+              <a class="nav__link" href="#">Статистика</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon wallet" src="images/dest/wallet.png" alt="#">
+              <a class="nav__link" href="#">Баланс</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon profile" src="images/dest/profile.png" alt="#">
+              <a class="nav__link" href="#">Персональные данные</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon information" src="images/dest/information.png" alt="#">
+              <a class="nav__link text nav__text" href="#">Faq</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon music" src="images/dest/music-and-multimedia.png" alt="#">
+              <a class="nav__link" href="#">Техподдержка</a>
+            </li>
+            <li class="nav__item">
+              <img class="nav__icon logout" src="images/dest/logout.png" alt="#">
+              <a class="nav__link" href="#">Выход</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main color">
+      <div class="main__top color">
+        <div class="main__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item breadcrumb__item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item breadcrumb__item active" aria-current="page"><a href="#">Мои магазины</a></li>
+        </ol>
+        <div class="main__right hero">
+          <div class="main__massage hero__massage">
+            <img class="main__massage-icon hero__massage-icon" src="images/dest/mess.png" alt="#">
+          </div>
+          <div class="admin">
+            <ul class="admin__list-unstyled">
+              <li class="admin__media">
+                <ul class="admin__user">
+                  <li><img class="admin__img-icon mr-3" src="images/dest/user.png" alt="#"></li>
+                  <li>
+                    <p class="admin__user-name mt-0 mb-1">Максим Добжанский</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__new-btn">
+          <button type="button" class="btn content__btn-plus" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Создать свой магазин</button>
+        </div>
+        <div class="tables">
+          <div class="tables__header">
+            <h1>Управление магазинами</h1>
+          </div>
+          <div class="tables__content">
+            <table class="tables__tabs">
+              <thead class="tables__header">
+                <tr>
+                  <th scope="col">№</th>
+                  <th scope="col">Название</th>
+                  <th scope="col">Адрес</th>
+                  <th scope="col">Действие</th>
+                </tr>
+              </thead>
+              <tbody class="tables__content-first">
+                <tr class="tables__info">
+                  <td class="tables__one">12345</td>
+                  <td class="tables__two">Дипломная работа</td>
+                  <td class="tables__free">https://www.work5.ru/services</td>
+                  <td class="tables__fore"><button type="button"
+                      class="btn pen tables__btn btn__green edit-dell">Редактировать</button></td>
+                  <td class="tables__five"><button type="button"
+                      class="btn quite tables__btn btn__grey edit-dell">Редактировать</button></td>
+                </tr>
+                <tr class="tables__info">
+                  <td class="tables__one">12345</td>
+                  <td class="tables__two">Дипломная работа</td>
+                  <td class="tables__free">https://www.work5.ru/services</td>
+                  <td class="tables__fore"><button type="button"
+                      class="btn pen  tables__btn btn__green edit-dell">Редактировать</button></td>
+                  <td class="tables__five"><button type="button"
+                      class="btn quite tables__btn btn__grey edit-dell">Редактировать</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- popup -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Создать магазин</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row modal-rows">
+            <div class="col-6">
+              <h1>Шаблон</h1>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Стандартный</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <h1>Цветовая схема</h1>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Классический</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="domain">
+            <h1>Домен</h1>
+            <div class="domain__input-group mb-3">
+              <input type="text" class="domain__form-control" placeholder="Например: ivangrozniy"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="domain__input-group-text" id="basic-addon2">.work5.ru</span>
+            </div>
+          </div>
+          <div class="warning">
+            <div class="warning__info">
+              <img class="warning__img" src="images/dest/warning.png" alt="#">
+            </div>
+            <div class="warning__text">
+              <p>В названии домена разрешены латиница и “-”, запрещается использовать
+                <br> словосочетание Work 5. После создания магазина Вы сможете прикрутить свой
+                <br> домен (например ivangrozniy.ru). Подробнее по ссылке
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn__modal btn__grey" data-bs-dismiss="modal">Отмена</button>
+          <button type="button" class="btn btn__modal btn__green">Создать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
